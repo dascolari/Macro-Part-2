@@ -1,34 +1,3 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% MATLAB Code: HJB_ramsey_implicit_upwind
-% 
-% Author: Kiyea Jin
-% Date: Nov 1, 2024
-%
-% Description:
-% This MATLAB script implements implicit method to solve the HJB equation
-% of the deterministic Ramsey Growth Model using upwind scheme.
-%
-% Reference:
-% HJB_NGM_implicit.m by Benjamin Moll
-% ramsey_implicit.m by Pontus Rendahl
-%
-% Notes:
-% - CRRA utility function: U(c) = (c^(1-gamma))/(1-gamma)
-% - Production function: f(k) = A*k^alpha
-% - Relative risk aversion coefficient (gamma): 2
-% - Discount rate (rho): 0.03
-% - Depreciation rate (delta): 0.025
-% - Elasticity of output with respect to capital (alpha): 1/3
-% - Total fator productivity (A): 1
-% - Delta = 1000 (Can be arbitrarily large in implicit method)
-% - Try with rho = delta = 0.05
-% 
-% Code Structure:
-% 1. DEFINE PARAMETERS
-% 2. INITIALIZE GRID POINTS
-% 3. PRE-ITERATION INITIALIZATION
-% 4. VALUE FUNCTION ITERATION
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 clear all;
 close all;
